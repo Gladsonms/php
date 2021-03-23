@@ -1,0 +1,24 @@
+<html>
+<body>
+<p><b>Display Capital of a Country using onchange event</b></p>
+<p>
+Select a Country:
+<select id="mySelect" onchange="myFunction()">
+<option value="Please select a Country">Please select a Country
+<option value="Delhi">India
+<option value="New york">America
+<option value="Rome">Italy
+<option value="Muscut">Oman
+</select>
+<br>
+<br>
+Capital: <input type="textbox" name="display">
+<p id="demo"></p>
+<script>
+function myFunction() {
+var x = document.getElementById("mySelect").value;
+document.getElementsByName('display')[0].value= x;
+}
+</script>
+</body>
+</html>

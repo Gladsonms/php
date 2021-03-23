@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function completeNumber()
+{
+var v,input,count = 0,i;
+input = Number(document.getElementById("N").value);
+var v=input;
+var count=0;
+for(var i=1; i<input; i++)
+{
+if(input%i==0)
+{
+count=count+i;
+}
+}
+if(count==v)
+{
+alert("Given no is PERFECT");
+}
+else if(count<v)
+{
+alert("Given no is DEFICIENT");
+}
+else if( count>v)
+{
+alert("Given no is ABUNDANT");
+}
+3
+}
+</script>
+</head>
+<body>
+<br>
+<h3>Check whether a number is Perfect || Abundant || Deficient</h3>
+Enter The Number :<input type="text" name="n" id = "N"/>
+<button onClick=completeNumber()>submit</button>
+</body>
+</html>

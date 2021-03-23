@@ -1,0 +1,18 @@
+<html>
+<head>
+<title></title>
+<body>
+<style type="text/css">
+input[attribute=flag],textarea:focus {
+color: red;
+background-color: #FFF8DC;//cornsilkcolor
+}
+input[attribute=flag]:focus, textarea:focus {
+color: white;
+background-color: green;
+}
+</style>
+<input type="text" attribute=flag onfocus="changeColor('text')"
+onblur="removeColor('text')">
+</body>
+</html>
